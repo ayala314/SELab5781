@@ -1,6 +1,6 @@
 package geometries;
 
-import elements.Material;
+//import elements.Material;
 import primitives.Color;
 import primitives.Point3D;
 import primitives.Ray;
@@ -22,21 +22,21 @@ public class Cylinder extends Tube {
     private final double _height;
 
 
-    /**
-     * constructor for a new Tube object
-     *
-     * @param radius        the radius of the tube
-     * @param ray           the direction of the tube from the referenced point
-     * @param material      the material of the tube
-     * @param emissionLight the emission light of the tube
-     * @param height        height of the cylinder (from the referenced point)
-     *                      <p>
-     *                      throws Exception in case of negative or zero radius from RadialGeometry constructor
-     */
-    public Cylinder(Color emissionLight, Material material, double radius, Ray ray, double height) {
-        super(emissionLight, material, radius, ray);
-        this._height = height;
-    }
+//    /**
+//     * constructor for a new Tube object
+//     *
+//     * @param radius        the radius of the tube
+//     * @param ray           the direction of the tube from the referenced point
+//     * @param material      the material of the tube
+//     * @param emissionLight the emission light of the tube
+//     * @param height        height of the cylinder (from the referenced point)
+//     *                      <p>
+//     *                      throws Exception in case of negative or zero radius from RadialGeometry constructor
+//     */
+//    public Cylinder(Color emissionLight, Material material, double radius, Ray ray, double height) {
+//        super(emissionLight, material, radius, ray);
+//        this._height = height;
+//    }
 
     public Cylinder(Color emissionLight, double radius, Ray ray, double height) {
         super(emissionLight, radius, ray);
@@ -54,18 +54,18 @@ public class Cylinder extends Tube {
         super(radius, ray);
         this._height = height;
     }
-
-    /**
-     * @param emissionLight
-     * @param material
-     * @param radius
-     * @param p1
-     * @param p2
-     */
-    public Cylinder(Color emissionLight, Material material, double radius, Point3D p1, Point3D p2) {
-        super(emissionLight, material, radius, new Ray(p1, p2.subtract(p1)));
-        this._height = p1.distance(p2);
-    }
+//
+//    /**
+//     * @param emissionLight
+//     * @param material
+//     * @param radius
+//     * @param p1
+//     * @param p2
+//     */
+//    public Cylinder(Color emissionLight, Material material, double radius, Point3D p1, Point3D p2) {
+//        super(emissionLight, material, radius, new Ray(p1, p2.subtract(p1)));
+//        this._height = p1.distance(p2);
+//    }
 
     /**
      * @param emissionLight
